@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Asma · اسما",
+  "short_name": "Asma",
+  "description": "Private bilingual caregiver support and picture communication",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8f5",
+  "theme_color": "#166860",
+  "lang": "fa-AF",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "./public/icons/app-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./public/icons/app-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

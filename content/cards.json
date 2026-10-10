@@ -1,0 +1,98 @@
+[
+  {
+    "id": "water",
+    "labels": {
+      "en-US": "Water",
+      "fa-AF": "آب"
+    },
+    "image": "./public/icons/water.svg"
+  },
+  {
+    "id": "food",
+    "labels": {
+      "en-US": "Food",
+      "fa-AF": "غذا"
+    },
+    "image": "./public/icons/food.svg"
+  },
+  {
+    "id": "help",
+    "labels": {
+      "en-US": "Help",
+      "fa-AF": "کمک"
+    },
+    "image": "./public/icons/help.svg"
+  },
+  {
+    "id": "stop",
+    "labels": {
+      "en-US": "Stop",
+      "fa-AF": "بس است"
+    },
+    "image": "./public/icons/stop.svg"
+  },
+  {
+    "id": "toilet",
+    "labels": {
+      "en-US": "Toilet",
+      "fa-AF": "تشناب"
+    },
+    "image": "./public/icons/toilet.svg"
+  },
+  {
+    "id": "pain",
+    "labels": {
+      "en-US": "It hurts",
+      "fa-AF": "درد دارم"
+    },
+    "image": "./public/icons/pain.svg"
+  },
+  {
+    "id": "more",
+    "labels": {
+      "en-US": "More",
+      "fa-AF": "بیشتر"
+    },
+    "image": "./public/icons/more.svg"
+  },
+  {
+    "id": "yes",
+    "labels": {
+      "en-US": "Yes",
+      "fa-AF": "بلی"
+    },
+    "image": "./public/icons/yes.svg"
+  },
+  {
+    "id": "no",
+    "labels": {
+      "en-US": "No",
+      "fa-AF": "نخیر"
+    },
+    "image": "./public/icons/no.svg"
+  },
+  {
+    "id": "break",
+    "labels": {
+      "en-US": "Break",
+      "fa-AF": "استراحت"
+    },
+    "image": "./public/icons/break.svg"
+  },
+  {
+    "id": "happy",
+    "labels": {
+      "en-US": "Happy",
+      "fa-AF": "خوشحال"
+    },
+    "image": "./public/icons/happy.svg"
+  },
+  {
+    "id": "together",
+    "labels": {
+      "en-US": "Together",
+      "fa-AF": "با هم"
+    },
+    "image": "./public/icons/together.svg"
+  }
+]

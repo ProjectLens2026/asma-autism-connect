@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Q-001",
+    "question": "Must she speak before using pictures?",
+    "answer": "No. Pictures, gestures and speech can be used together. AAC has no speech prerequisite.",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "Q-002",
+    "question": "What if she points to water?",
+    "answer": "Respond to the request. You may model the picture or word while providing water; do not require repetition.",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "Q-003",
+    "question": "What does no response mean?",
+    "answer": "It does not prove inability or failure. Consider access, comfort, interest and the situation; adjust support.",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "Q-004",
+    "question": "Is the app an autism test or cure?",
+    "answer": "No. It provides education and communication support. It does not diagnose, screen, prescribe treatment or promise speech.",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "Q-005",
+    "question": "Should we practise through distress?",
+    "answer": "Pause, respect refusal and respond to possible unmet needs. Seek professional help for health or safety concerns.",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "Q-006",
+    "question": "Are card taps proof of learning?",
+    "answer": "No. Describe meaningful communication in everyday settings and the support used. Avoid interpreting tap counts as clinical improvement.",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "L001",
+    "title": "Notice communication",
+    "body": "Watch one familiar routine. Notice pointing, movement, pictures or words. Respond without asking for a performance.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L002",
+    "title": "Offer a real choice",
+    "body": "Show two available, preferred activities. Accept a look, gesture, picture or word; either choice is valid.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L003",
+    "title": "Model a picture",
+    "body": "Point to one relevant picture while speaking naturally. Leave the board within reach; imitation is optional.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L004",
+    "title": "Respect no and stop",
+    "body": "Show how to indicate no or stop during an optional activity. Honour refusal and offer a pause.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L005",
+    "title": "Make help accessible",
+    "body": "Model help in a naturally occurring moment. Give help promptly; do not create frustration to obtain a request.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L006",
+    "title": "Share an interest",
+    "body": "Join an activity she chooses. Comment briefly and allow quiet time. No eye contact or spoken answer is required.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L007",
+    "title": "Review and rest",
+    "body": "Notice which supports felt comfortable this week. Repeat a favourite moment or take a rest day.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L008",
+    "title": "Support a familiar routine",
+    "body": "Choose one manageable part of handwashing or dressing. Show the step and offer the help she wants.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L009",
+    "title": "Offer a break",
+    "body": "Keep the break picture visible. Offer a quieter space or pause when she communicates discomfort.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L010",
+    "title": "Communicate discomfort",
+    "body": "Show the pain and help pictures without testing her. Respond to discomfort; new or severe symptoms need medical attention.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L011",
+    "title": "Keep pictures nearby",
+    "body": "Carry a printed board into a familiar setting. Keep her usual ways of communicating available too.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L012",
+    "title": "Share with another caregiver",
+    "body": "With family permission, show another trusted adult how to model pictures and respect refusal.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L013",
+    "title": "Support privacy and choice",
+    "body": "Use age-respectful language during self-care. Explain before helping, respect privacy and offer choices.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  },
+  {
+    "id": "L014",
+    "title": "Choose what to repeat",
+    "body": "Review her preferences and your observations. Keep useful supports; change uncomfortable ones with professional input where available.",
+    "minutes": "3–5",
+    "sourceIds": [
+      "asha-aac",
+      "who-cst"
+    ],
+    "version": "0.1.0",
+    "status": "draft"
+  }
+]

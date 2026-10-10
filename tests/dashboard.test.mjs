@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {renderDashboard,dashboardTarget} from '../src/dashboard.js';
+import {safeText} from '../src/domain.js';
+const markup=()=>renderDashboard({t:k=>k,e:safeText,btn:(label,action,attrs='')=>`<button data-action="${action}" ${attrs}>${label}</button>`,day:8,done:3,observations:2,recordings:4,reviewDate:'2027-01-09',lessonHTML:'<article>lesson content</article>'});
+test('dashboard has nine native full-card targets with six core destinations',()=>{const html=markup();assert.equal((html.match(/class="dashboard-tile"/g)||[]).length,9);for(const page of ['journey','observe','voice','qa','progress','sources'])assert.ok(html.includes(`data-page="${page}"`));assert.ok(html.includes('data-action="child"'));assert.ok(!html.includes('role="button"'));});
+test('dashboard tiles never nest another button',()=>{for(const tile of markup().matchAll(/<button type="button" class="dashboard-tile"[\s\S]*?<\/button>/g)){assert.equal((tile[0].match(/<button/g)||[]).length,1);assert.ok(tile[0].includes('tile-link'));}});
+test('today lesson route preserves the current day',()=>{assert.deepEqual(dashboardTarget({page:'journey',day:'8'},2),{page:'journey',day:8,checkpoint:null});assert.equal(dashboardTarget({page:'journey',day:'999'},2).day,2);});
+test('checkpoint card maps to the exact review form',()=>{for(const checkpoint of ['3','6']){assert.equal(dashboardTarget({page:'progress',checkpoint},1).checkpoint,checkpoint);assert.ok(markup().includes(`data-checkpoint="${checkpoint}"`));}assert.equal(dashboardTarget({page:'progress',checkpoint:'4'},1).checkpoint,null);});
+test('dashboard counts are caregiver facts and approved-recording availability',()=>{const html=markup();assert.ok(html.includes('3/180'));assert.ok(html.includes('4/12'));assert.ok(html.includes('2027-01-09'));assert.ok(!html.includes('clinical score'));});

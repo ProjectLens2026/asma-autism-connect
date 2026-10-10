@@ -1,0 +1,13 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Permissions-Policy: microphone=(self), camera=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000
+/sw.js
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/content/*
+  Cache-Control: no-cache
