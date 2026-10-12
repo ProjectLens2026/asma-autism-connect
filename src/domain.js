@@ -1,6 +1,7 @@
+import {validWeek} from './week.js';
 export const LOCALES = ['en-US', 'fa-AF'];
-export const APP_VERSION = '0.1.2';
-export const CONTENT_VERSION = '0.1.0';
+export const APP_VERSION = '0.1.9';
+export const CONTENT_VERSION = '0.1.2';
 export const CONSENT_VERSION = '1.0';
 export const CARD_IDS=['water','food','help','stop','toilet','pain','more','yes','no','break','happy','together'];
 export const MAX_CLIP_BYTES = 2 * 1024 * 1024;
@@ -30,10 +31,11 @@ export function validateData(d) {
   if (!Object.entries(d.completed).every(([k,v])=>/^\d{1,3}$/.test(k)&&Number(k)>=1&&Number(k)<=180&&typeof v==='boolean')) return false;
   if (!Object.entries(d.checkpoints).every(([k,v])=>['3','6'].includes(k)&&typeof v.notes==='string'&&v.notes.length<=1000&&validDate(v.date))) return false;
   if (!Object.entries(d.clips).every(([k,v])=>/^(fa-AF|en-US):[a-z]+$/.test(k)&&CARD_IDS.includes(k.split(':')[1])&&['draft','approved'].includes(v.status)&&typeof v.base64==='string'&&v.base64.length<MAX_CLIP_BYTES*1.4&&/^audio\/(webm|mp4|ogg|mpeg|wav)(;.*)?$/.test(v.mime))) return false;
+  if(d.week!==undefined&&!validWeek(d.week,validDate))return false;
   return ['tts','analytics'].every(k=>typeof d.settings[k]==='boolean');
 }
 export function progressReport(d) {
-  return {reportType:'caregiver-functional-observations-not-clinical-assessment',appVersion:APP_VERSION,contentVersion:CONTENT_VERSION,contentReview:'draft-unreviewed',exportedAt:new Date().toISOString(),locale:d.locale,startDate:d.startDate,caregiverActivities:d.completed,observations:d.observations,checkpoints:d.checkpoints};
+  return {reportType:'caregiver-functional-observations-not-clinical-assessment',appVersion:APP_VERSION,contentVersion:CONTENT_VERSION,contentReview:'draft-unreviewed',exportedAt:new Date().toISOString(),locale:d.locale,startDate:d.startDate,caregiverActivities:d.completed,learningWeek:d.week||null,observations:d.observations,checkpoints:d.checkpoints};
 }
 export function englishVoice(voices) { return voices.find(v=>v.lang.toLowerCase()==='en-us' && v.localService) || null; }
 export function playableClip(clips,locale,id) { const c=clips?.[`${locale}:${id}`]; return c?.status==='approved'?c:null; }

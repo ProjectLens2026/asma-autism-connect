@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "created": "2026-10-12",
+  "status": "draft",
+  "clinicalReviewer": null,
+  "nativeDariReviewer": null,
+  "method": "Built-in image generation; WebP encoding for delivery. Fictional people, no patient photographs.",
+  "assets": [
+    {
+      "id": "water",
+      "path": "./public/photos/water.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: single square AAC communication photograph. A single transparent drinking glass filled with clean water, centered on a plain pale blue surface and background, entire glass visible, clear recognisable silhouette, realistic studio photography, soft natural light. No other objects, no people, no text, no symbols, no logo, no border. Not a cartoon or 3D rendering."
+    },
+    {
+      "id": "food",
+      "path": "./public/photos/food.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: single square AAC communication photograph. One simple white plate containing cooked rice, a small piece of flatbread and cooked vegetables, centered on a plain pale blue tabletop, photographed from slightly above. Familiar simple home food, realistic natural texture, entire plate visible, uncluttered background. No cutlery, people, text, symbols, branding or border. Not a cartoon."
+    },
+    {
+      "id": "toilet",
+      "path": "./public/photos/toilet.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: single square AAC communication photograph. A clean simple white Western seated toilet with its lid raised, toilet seat down, cistern visible, photographed from front three-quarter view in an otherwise empty plain light-blue tiled bathroom. Entire fixture easily recognisable, neutral everyday setting, realistic photography. No people, no text, no labels, no other bathroom fixtures, no decorative objects."
+    },
+    {
+      "id": "together",
+      "path": "./public/photos/together.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: caregiver app lesson photograph, landscape 3:2. Fictional Afghan/South Asian woman caregiver in a modest light-blue long-sleeved outfit and loosely draped head scarf sits beside a fictional 11-year-old girl in modest navy casual clothing at a low table with a simple open picture book. Both look comfortably toward the book, not at camera, no required eye contact, no hand-over-hand prompting. Respectful ordinary family life in a bright modest home, no clinic, no diagnosis implied, no baby toys. Natural daylight, realistic faces and hands, documentary photo appearance. No text, logos, symbols or collage."
+    },
+    {
+      "id": "choice",
+      "path": "./public/photos/choice.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: caregiver app lesson photograph, landscape 3:2. Fictional Black father in a plain light-blue shirt sits beside his fictional 11-year-old daughter in modest everyday clothing at a simple table. A closed picture book and a soft blue ball are clearly separated on the table within her reach. She comfortably reaches toward the ball on her own while he watches without touching her hands. Age-respectful ordinary home scene, uncluttered, candid realistic photography, natural daylight, navy and light-blue accents. Not therapy documentation; no diagnosis implied. No text, logos, cartoon, collage or symbols."
+    },
+    {
+      "id": "break",
+      "path": "./public/photos/break.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: caregiver app lesson photograph, landscape 3:2. Fictional East Asian 11-year-old girl in modest navy and pale-blue casual clothing sits comfortably resting on a simple sofa, her hands relaxed in her lap, eyes open and calm. An adult woman caregiver sits at a comfortable distance nearby, allowing space. Bright uncluttered ordinary family room, natural daylight, respectful documentary-style realistic photography. No tasks, no screen, no food, no medical equipment, no diagnosis implied, no sleeping, no text, branding, cartoon or collage."
+    }
+  ]
+}

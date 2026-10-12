@@ -5,7 +5,8 @@
       "en-US": "Water",
       "fa-AF": "آب"
     },
-    "image": "./public/icons/water.svg"
+    "image": "./public/icons/water.svg",
+    "photo": "./public/photos/water.webp"
   },
   {
     "id": "food",
@@ -13,7 +14,8 @@
       "en-US": "Food",
       "fa-AF": "غذا"
     },
-    "image": "./public/icons/food.svg"
+    "image": "./public/icons/food.svg",
+    "photo": "./public/photos/food.webp"
   },
   {
     "id": "help",
@@ -37,7 +39,8 @@
       "en-US": "Toilet",
       "fa-AF": "تشناب"
     },
-    "image": "./public/icons/toilet.svg"
+    "image": "./public/icons/toilet.svg",
+    "photo": "./public/photos/toilet.webp"
   },
   {
     "id": "pain",
@@ -77,7 +80,8 @@
       "en-US": "Break",
       "fa-AF": "استراحت"
     },
-    "image": "./public/icons/break.svg"
+    "image": "./public/icons/break.svg",
+    "photo": "./public/photos/break.webp"
   },
   {
     "id": "happy",
@@ -93,6 +97,7 @@
       "en-US": "Together",
       "fa-AF": "با هم"
     },
-    "image": "./public/icons/together.svg"
+    "image": "./public/icons/together.svg",
+    "photo": "./public/photos/together.webp"
   }
 ]

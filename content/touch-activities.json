@@ -1,0 +1,227 @@
+[
+  {
+    "title": [
+      "Choose together",
+      "با هم انتخاب کنیم"
+    ],
+    "icon": "hand",
+    "time": 2,
+    "prepare": [
+      "Put out two familiar activities.",
+      "دو بازی آشنا را پیش روی کودک بگذارید."
+    ],
+    "objects": [
+      [
+        "book-open",
+        "Book",
+        "کتاب"
+      ],
+      [
+        "circle",
+        "Ball",
+        "توپ"
+      ]
+    ],
+    "say": [
+      "“Book or ball?”",
+      "«کتاب یا توپ؟»"
+    ],
+    "try": [
+      "Offer once. Pause and follow their choice.",
+      "یک بار پیشنهاد کنید. صبر کنید و انتخابش را دنبال کنید."
+    ],
+    "note": [
+      "Looking, reaching, gestures, pictures and words all count.",
+      "نگاه، دست دراز کردن، اشاره، تصویر و کلمه، همه راه‌های ارتباط‌اند."
+    ],
+    "id": "T01",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeDariReviewer": null,
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original caregiver activity draft; not a validated treatment protocol."
+  },
+  {
+    "title": [
+      "Play together",
+      "با هم بازی کنیم"
+    ],
+    "icon": "heart",
+    "time": 4,
+    "prepare": [
+      "Join an activity your child already enjoys.",
+      "در بازی دلخواه کودکتان همراه شوید."
+    ],
+    "objects": [
+      [
+        "circle",
+        "Roll a ball",
+        "توپ را بغلتانید"
+      ],
+      [
+        "book-open",
+        "Share a book",
+        "کتاب ببینید"
+      ]
+    ],
+    "say": [
+      "“Can I join you?”",
+      "«من هم بازی کنم؟»"
+    ],
+    "try": [
+      "Follow their pace. Copy one playful action.",
+      "با آرامش همراه شوید. یکی از حرکت‌های بازی‌اش را تکرار کنید."
+    ],
+    "note": [
+      "They can watch, join, or prefer their own space.",
+      "می‌تواند تماشا کند، همراه شود یا تنها بازی کند."
+    ],
+    "id": "T02",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeDariReviewer": null,
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original caregiver activity draft; not a validated treatment protocol."
+  },
+  {
+    "title": [
+      "Ask for help",
+      "کمک بخواهیم"
+    ],
+    "icon": "message-circle",
+    "time": 3,
+    "prepare": [
+      "Notice a natural moment when help would be useful.",
+      "به یک موقعیت طبیعی که کمک مفید است توجه کنید."
+    ],
+    "objects": [
+      [
+        "hand",
+        "Help",
+        "کمک"
+      ],
+      [
+        "coffee",
+        "Break",
+        "استراحت"
+      ]
+    ],
+    "say": [
+      "“Help? I can help.”",
+      "«کمک؟ من کمک می‌کنم.»"
+    ],
+    "try": [
+      "Model “help” with a word, picture or gesture. Respond right away.",
+      "با کلمه، تصویر یا اشاره «کمک» را نشان دهید. همان وقت کمک کنید."
+    ],
+    "note": [
+      "Do not create a difficulty or wait for a correct response.",
+      "عمداً مشکل نسازید و منتظر پاسخ درست نمانید."
+    ],
+    "id": "T03",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeDariReviewer": null,
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original caregiver activity draft; not a validated treatment protocol."
+  },
+  {
+    "title": [
+      "Choose a little play",
+      "یک بازی کوتاه"
+    ],
+    "icon": "puzzle",
+    "time": 3,
+    "prepare": [
+      "Offer two ways to play. Let your child choose.",
+      "دو بازی پیشنهاد کنید. بگذارید کودکتان انتخاب کند."
+    ],
+    "objects": [
+      [
+        "music",
+        "Make a sound",
+        "یک صدا بسازیم"
+      ],
+      [
+        "circle",
+        "Roll a ball",
+        "توپ بازی کنیم"
+      ]
+    ],
+    "say": [
+      "“Sound or ball?”",
+      "«صدا یا توپ؟»"
+    ],
+    "try": [
+      "Try the chosen play together. Stop when it is no longer enjoyable.",
+      "بازی انتخاب‌شده را با هم انجام دهید. وقتی خوشایند نبود، تمام کنید."
+    ],
+    "note": [
+      "For sound play, begin quietly only if your child wants it.",
+      "بازی با صدا را فقط اگر کودک خواست، با صدای آرام شروع کنید."
+    ],
+    "id": "T04",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeDariReviewer": null,
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original caregiver activity draft; not a validated treatment protocol."
+  },
+  {
+    "title": [
+      "Use it in daily life",
+      "در زندگی روزمره"
+    ],
+    "icon": "house",
+    "time": 3,
+    "prepare": [
+      "At an ordinary moment, offer a familiar choice.",
+      "در یک وقت عادی، یک انتخاب آشنا پیشنهاد کنید."
+    ],
+    "objects": [
+      [
+        "book-open",
+        "Book",
+        "کتاب"
+      ],
+      [
+        "music",
+        "Music",
+        "موسیقی"
+      ]
+    ],
+    "say": [
+      "“What would you like?”",
+      "«چه می‌خواهی؟»"
+    ],
+    "try": [
+      "Use the same picture, gesture or words from earlier.",
+      "از همان تصویر، اشاره یا کلمه‌های قبلی استفاده کنید."
+    ],
+    "note": [
+      "Accept no or a change of mind. This is a real choice.",
+      "نخواستن یا تغییر نظر را بپذیرید. این یک انتخاب واقعی است."
+    ],
+    "id": "T05",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeDariReviewer": null,
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original caregiver activity draft; not a validated treatment protocol."
+  }
+]

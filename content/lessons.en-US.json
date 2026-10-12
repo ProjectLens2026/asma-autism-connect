@@ -3,12 +3,92 @@
     "id": "L001",
     "title": "Notice communication",
     "body": "Watch one familiar routine. Notice pointing, movement, pictures or words. Respond without asking for a performance.",
-    "minutes": "3–5",
+    "minutes": "9 + 10",
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
-    "status": "draft"
+    "version": "0.1.2",
+    "status": "draft",
+    "steps": [
+      {
+        "title": "Join something she enjoys",
+        "body": "Bring a familiar book, drawing materials or another activity she already likes.",
+        "image": "together",
+        "minutes": 3,
+        "demo": [
+          {
+            "scene": "join",
+            "caption": "Sit nearby and let her choose whether to join.",
+            "say": "“I’m here with you.”",
+            "accept": "She may join, watch, move away or say no."
+          },
+          {
+            "scene": "notice",
+            "caption": "Follow what interests her. Describe one thing without asking a question.",
+            "say": "“You chose the book.”",
+            "accept": "A look, movement, gesture, picture or word can be communication."
+          },
+          {
+            "scene": "rest",
+            "caption": "Pause and respond to her message. If she wants to stop, stop.",
+            "say": "“We can stop.”",
+            "accept": "No spoken answer or eye contact is needed."
+          }
+        ]
+      },
+      {
+        "title": "Offer two real choices",
+        "body": "Use two familiar things that are available now, such as a book and a ball.",
+        "image": "happy",
+        "minutes": 3,
+        "demo": [
+          {
+            "scene": "choice",
+            "caption": "Place both options where she can see and reach them comfortably.",
+            "say": "“Book or ball?”",
+            "accept": "Neither is also a valid choice."
+          },
+          {
+            "scene": "notice",
+            "caption": "Give her quiet time. Notice which item she looks toward, reaches for or indicates.",
+            "say": "You can stay quiet while she decides.",
+            "accept": "If the meaning is unclear, offer the choices again without testing."
+          },
+          {
+            "scene": "join",
+            "caption": "Offer the item she indicates and share the activity if she wants.",
+            "say": "“The ball. Here it is.”",
+            "accept": "She may change her mind. Do not require a word or a tap."
+          }
+        ]
+      },
+      {
+        "title": "Show how to ask for a break",
+        "body": "Keep the break picture nearby during an optional activity.",
+        "image": "break",
+        "minutes": 3,
+        "demo": [
+          {
+            "scene": "model",
+            "caption": "Point to the break picture while saying its meaning naturally.",
+            "say": "“Break. We can rest.”",
+            "accept": "She does not need to copy you."
+          },
+          {
+            "scene": "rest",
+            "caption": "Pause the activity when she signals discomfort, no or stop.",
+            "say": "“Okay, we’ll stop.”",
+            "accept": "Respond to her message even if she does not use the picture."
+          },
+          {
+            "scene": "rest",
+            "caption": "Offer rest and finish for today if she wants. Keep the picture board available.",
+            "say": "“We’re finished for now.”",
+            "accept": "Water, food, comfort and rest never depend on a response."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "L002",
@@ -18,7 +98,7 @@
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -29,7 +109,7 @@
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -40,7 +120,7 @@
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -51,7 +131,7 @@
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -62,7 +142,7 @@
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -73,7 +153,7 @@
     "sourceIds": [
       "asha-aac"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -85,7 +165,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -97,7 +177,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -109,7 +189,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -121,7 +201,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -133,7 +213,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -145,7 +225,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   },
   {
@@ -157,7 +237,7 @@
       "asha-aac",
       "who-cst"
     ],
-    "version": "0.1.0",
+    "version": "0.1.2",
     "status": "draft"
   }
 ]

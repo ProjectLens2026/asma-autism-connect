@@ -1,0 +1,233 @@
+[
+  {
+    "id": "W01",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Join a familiar activity",
+    "photo": "together",
+    "revisit": "Offer the same familiar activity. Notice whether she wants to join, watch or stop.",
+    "steps": [
+      {
+        "do": "Bring something she enjoys and sit nearby.",
+        "say": "“I’m here.”",
+        "accept": "She can watch, join or move away."
+      },
+      {
+        "do": "Follow her interest; describe one thing.",
+        "say": "“You chose the book.”",
+        "accept": "A movement, gesture, look, picture or word may carry meaning."
+      },
+      {
+        "do": "Pause and respond without testing.",
+        "say": "“We can stop.”",
+        "accept": "No speech or eye contact is required."
+      }
+    ]
+  },
+  {
+    "id": "W02",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Offer two real choices",
+    "photo": "choice",
+    "revisit": "Offer the same two available items. Accept either, neither or a change of mind.",
+    "steps": [
+      {
+        "do": "Put two familiar, available items within comfortable reach.",
+        "say": "“Book or ball?”",
+        "accept": "Choose suitable items for this child; neither is a choice too."
+      },
+      {
+        "do": "Give her quiet time to show her preference.",
+        "say": "You can wait quietly.",
+        "accept": "If her meaning is unclear, show the choices again without pressure."
+      },
+      {
+        "do": "Offer what she indicates.",
+        "say": "“The book. Here it is.”",
+        "accept": "Do not require a word or screen tap before giving the item."
+      }
+    ]
+  },
+  {
+    "id": "W03",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Show “help” in an everyday moment",
+    "photo": "together",
+    "revisit": "During a familiar activity, show how to ask for help. Help without requiring a response.",
+    "steps": [
+      {
+        "do": "Join an activity she already likes. Keep the help picture available.",
+        "say": "“I can help.”",
+        "accept": "Do not create a problem or take something away to force a request."
+      },
+      {
+        "do": "If help is needed, point to the help picture yourself.",
+        "say": "“Help.”",
+        "accept": "A gesture or movement can also ask for help."
+      },
+      {
+        "do": "Offer help and notice whether it is welcome.",
+        "say": "“Shall I help?”",
+        "accept": "Accept refusal. For an urgent safety need, act without waiting for communication."
+      }
+    ]
+  },
+  {
+    "id": "W04",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Respect “no” and “stop”",
+    "photo": "break",
+    "revisit": "Offer an optional activity. Respond to refusal without asking her to use a particular word.",
+    "steps": [
+      {
+        "do": "Offer an optional activity and keep “no” and “stop” pictures nearby.",
+        "say": "“Would you like to play?”",
+        "accept": "Turning away or moving an item away may mean no; check gently if unsure."
+      },
+      {
+        "do": "Model “no” yourself while pointing to its picture.",
+        "say": "“No. We can stop.”",
+        "accept": "She does not have to imitate you."
+      },
+      {
+        "do": "Stop the optional activity when she declines.",
+        "say": "“Okay, we’ll stop.”",
+        "accept": "Refusal is communication, not a failed lesson."
+      }
+    ]
+  },
+  {
+    "id": "W05",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Ask for a break",
+    "photo": "break",
+    "revisit": "Show the break picture during an optional activity and offer rest.",
+    "steps": [
+      {
+        "do": "Make a comfortable place to rest available.",
+        "say": "“We can rest here.”",
+        "accept": "She may prefer a different comfortable place."
+      },
+      {
+        "do": "Point to the break picture and pause together.",
+        "say": "“Break.”",
+        "accept": "Rest never depends on using the picture."
+      },
+      {
+        "do": "Let her choose whether to return or finish.",
+        "say": "“More, or finished?”",
+        "accept": "Notice her comfort. Ending early is okay."
+      }
+    ]
+  },
+  {
+    "id": "W06",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Use pictures during a familiar routine",
+    "photo": "water",
+    "revisit": "Keep a familiar picture available during the same routine. Notice any way she communicates.",
+    "steps": [
+      {
+        "do": "Choose an ordinary routine, such as having water. Keep water freely available.",
+        "say": "“Water is here.”",
+        "accept": "Use the real object too; a photograph may not be meaningful yet."
+      },
+      {
+        "do": "Point to the matching picture while naming it once.",
+        "say": "“Water.”",
+        "accept": "No copying, naming test or tap is needed."
+      },
+      {
+        "do": "Respond to her communication during the routine.",
+        "say": "“More?” or “Finished?”",
+        "accept": "Do not infer understanding just from a tap; observe the whole interaction."
+      }
+    ]
+  },
+  {
+    "id": "W07",
+    "version": "0.1.0",
+    "status": "draft",
+    "clinicalReviewer": null,
+    "nativeReviewer": null,
+    "reviewedAt": null,
+    "authoredAt": "2026-10-12",
+    "sourceIds": [
+      "asha-aac"
+    ],
+    "scope": "Original educational practice; not a validated treatment protocol.",
+    "title": "Repeat a favorite and reflect",
+    "photo": "together",
+    "revisit": "Return to the activity she enjoyed most. Notice what support helped.",
+    "steps": [
+      {
+        "do": "Offer two activities from this week. Let her choose, or decline.",
+        "say": "“Which would you like?”",
+        "accept": "Choose familiar, age-respectful activities."
+      },
+      {
+        "do": "Use the pictures, gestures or words that helped before.",
+        "say": "Use one familiar phrase from that activity.",
+        "accept": "Give the support she needs; independence is not a requirement."
+      },
+      {
+        "do": "Finish comfortably and reflect on what helped.",
+        "say": "“Finished for now.”",
+        "accept": "A week of activities cannot establish mastery or an autism level."
+      }
+    ]
+  }
+]
