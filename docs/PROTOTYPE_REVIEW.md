@@ -16,3 +16,9 @@ Changed:
 - New modules add content validation/release gate, cryptographic tests, offline cache policy, backup/restore, permission/error handling and browser test instructions.
 
 Deferred deliberately: diagnostic screening, clinical instruments, forced repetition, rewards tied to essential needs, broad multilingual rollout, remote child profiles, automatic diagnosis, AI classification, remote voice synthesis and claims of clinical validation.
+
+
+## 0.1.10 My drink pilot
+The new original draft lesson in src/drink.js uses the existing generated water illustration. It models a communication opportunity, accepts gestures or other communication, keeps water available without a performance requirement, and records only caregiver observations. It does not measure mastery or swallowing ability. English and Afghan Dari wording still require clinical/native-language review; no native Dari audio is claimed.
+
+71 automated checks pass, including encrypted automatic reopen, existing password-vault migration, optional password protection and stale-save rejection. Browser/touch device verification remains pending; run npm run test:browser with Playwright Chromium installed.

@@ -1,6 +1,6 @@
 {
   "name": "asma",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": true,
   "type": "module",
   "engines": {
@@ -11,7 +11,7 @@
     "build": "node scripts/validate.mjs && node scripts/build.mjs",
     "start": "node scripts/server.mjs dist",
     "test": "node --test tests/*.test.mjs",
-    "test:browser": "node tests/touch-browser.mjs",
+    "test:browser": "node tests/drink-browser.mjs",
     "validate": "node scripts/validate.mjs",
     "release:check": "node scripts/validate.mjs --release",
     "pretest": "node scripts/validate.mjs && node scripts/build.mjs && node scripts/build-preview.mjs",

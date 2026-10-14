@@ -9,13 +9,16 @@ import * as home from '../src/home.js';
 import * as play from '../src/play.js';
 import * as guide from '../src/day-one.js';
 import * as timer from '../src/session-timer.js';
+import * as drink from '../src/drink.js';
+import * as encryption from '../src/crypto.js';
+import {webcrypto} from 'node:crypto';
 import * as dashboard from '../src/dashboard.js';
-async function app(){
+async function app(store={}){
  const events={};
  const root={innerHTML:'',addEventListener(name,fn){events[name]=fn;},querySelector(){return {focus(){}};}};
  const status={textContent:''};
  const document={querySelector:s=>s==='#app'?root:status,documentElement:{},addEventListener(){}};
- const context=vm.createContext({...touch,...week,...domain,...home,...play,...guide,...timer,...dashboard,e:domain.safeText,document,window:{addEventListener(){}},navigator:{onLine:true},crypto:{subtle:{}},structuredClone,seal:async d=>structuredClone(d),writeVault:async()=>({revision:1}),FormData:class {constructor(f){this.fields=f.fields;}get(k){return this.fields[k]??null;}has(k){return k in this.fields;}},indexedDB:{},console,setInterval(){},setTimeout(){},clearTimeout(){},readVault:async()=>null,stopPlayback(){},cancelRecording(){},speakCard:async()=>false,fetch:async path=>({ok:true,json:async()=>JSON.parse(await readFile(new URL('../'+path.replace(/^\.\//,''),import.meta.url),'utf8'))})});
+ const context=vm.createContext({...drink,...encryption,...touch,...week,...domain,...home,...play,...guide,...timer,...dashboard,e:domain.safeText,document,window:{addEventListener(){}},navigator:{onLine:true},crypto:webcrypto,structuredClone,seal:store.real?encryption.seal:async d=>structuredClone(d),writeVault:async(envelope,expected=null,access)=>{if((store.envelope?.revision??null)!==expected)throw Error('STALE_VAULT');store.envelope={...structuredClone(envelope),revision:(expected??0)+1};if(access!==undefined)store.access=access;return store.envelope;},FormData:class {constructor(f){this.fields=f.fields;}get(k){return this.fields[k]??null;}has(k){return k in this.fields;}},indexedDB:{},console,setInterval(){},setTimeout(){},clearTimeout(){},readVault:async()=>store.envelope||null,readDeviceAccess:async()=>store.access||null,stopPlayback(){},cancelRecording(){},speakCard:async()=>false,fetch:async path=>({ok:true,json:async()=>JSON.parse(await readFile(new URL('../'+path.replace(/^\.\//,''),import.meta.url),'utf8'))})});
  const source=(await readFile(new URL('../src/app.js',import.meta.url),'utf8')).replace(/^import .*;\n/gm,'').replace(/boot\(\);\s*$/,'globalThis.ready=boot();');
  vm.runInContext(source,context);await context.ready;
  return {root,context,submit:async(id,fields)=>events.submit({preventDefault(){},target:{id,fields,querySelector(){return null;}}}),read:s=>vm.runInContext(s,context),act:async(action,extra={})=>{context.testButton={dataset:{action,...extra}};await vm.runInContext('handleAction(testButton)',context);}};
@@ -31,7 +34,7 @@ test('caregiver task → break → next task; child handoff retains place and do
 });
 test('three activities finish without automatic persistence or restricted AAC',async()=>{const a=await app();await a.act('start-guide');for(let n=0;n<3;n++){await a.act('guide-next');if(n<2)await a.act('resume-guide');}assert.equal(a.read('state.guideStep'),3);assert.ok(a.root.innerHTML.includes('data-action="save-guide"'));assert.equal(a.read('state.data'),null);await a.act('child');assert.equal((a.root.innerHTML.match(/class="picture /g)||[]).length,12);});
 test('all fourteen draft activities are reachable without private storage',async()=>{const a=await app();await a.act('nav',{page:'library'});assert.equal((a.root.innerHTML.match(/class="library-tile"/g)||[]).length,14);for(let day=1;day<=14;day++){await a.act('nav',{page:'journey',day:String(day)});assert.equal(a.read('state.day'),day);assert.ok(!a.root.innerHTML.includes('id="vault-form"'));assert.ok(a.root.innerHTML.includes('data-complete="'+day+'" disabled'));}await a.act('child');assert.ok(a.root.innerHTML.includes('public/photos/water.webp'));});
-test('dashboard and learning plan are public; private records stay gated',async()=>{const a=await app();assert.equal(a.read('state.page'),'dashboard');assert.ok(a.root.innerHTML.includes('id="parent-navigation"'));for(const page of ['dashboard','today','plan','qa','sources']){await a.act('nav',{page});assert.ok(!a.root.innerHTML.includes('id="vault-form"'));}for(const page of ['observe','progress','voice','privacy']){await a.act('nav',{page});assert.ok(a.root.innerHTML.includes('id="vault-form"'));}await a.act('toggle-menu');assert.equal(a.read('state.menuOpen'),true);await a.act('nav',{page:'dashboard'});assert.equal(a.read('state.menuOpen'),false);});
+test('dashboard and learning plan are public; private records stay gated',async()=>{const a=await app();assert.equal(a.read('state.page'),'dashboard');assert.ok(a.root.innerHTML.includes('id="parent-navigation"'));for(const page of ['dashboard','today','plan','qa','sources']){await a.act('nav',{page});assert.ok(!a.root.innerHTML.includes('id="vault-form"'));}for(const page of ['observe','progress','voice']){await a.act('nav',{page});assert.ok(a.root.innerHTML.includes('id="vault-form"'));}await a.act('toggle-menu');assert.equal(a.read('state.menuOpen'),true);await a.act('nav',{page:'dashboard'});assert.equal(a.read('state.menuOpen'),false);});
 test('garden is optional, unscored and preserves communication access and caregiver place',async()=>{const a=await app();await a.act('start-guide');await a.act('demo-next');await a.act('garden');assert.ok(!a.root.innerHTML.includes('id="parent-navigation"'));assert.equal((a.root.innerHTML.match(/class="garden-plot"/g)||[]).length,6);await a.act('plant',{plot:'2'});assert.equal(a.read('state.plants[2]'),1);await a.act('plant',{plot:'99'});assert.equal(a.read('state.plants.length'),6);assert.equal(a.read('state.data'),null);await a.act('child');assert.equal((a.root.innerHTML.match(/class="picture /g)||[]).length,12);await a.act('parent');assert.equal(a.read('state.page'),'day-one');assert.equal(a.read('state.guideFrame'),1);await a.act('garden');await a.act('reset-garden');assert.equal(a.read('state.plants.every(v=>v===0)'),true);});
 
 test('one instruction per screen and child handoff preserve the fourth screen',async()=>{const a=await app();await a.act('start-guide');for(let frame=0;frame<3;frame++){assert.equal(a.read('state.guideFrame'),frame);assert.ok(a.root.innerHTML.includes('data-action="demo-next"'));assert.ok(!a.root.innerHTML.includes('data-action="guide-next"'));await a.act('demo-next');}assert.ok(a.root.innerHTML.includes('data-action="child-practice"'));await a.act('child-practice');await a.act('parent');assert.equal(a.read('state.guideFrame'),3);await a.act('guide-next');assert.equal(a.read('state.guideBreak'),'between');await a.act('resume-guide');assert.equal(a.read('state.guideFrame'),0);assert.equal(a.read('state.guideStep'),1);});
@@ -93,4 +96,30 @@ test('touch plan renders all activity stages in both languages with distinct con
  for(let f=0;f<3;f++){assert.ok(!a.root.innerHTML.includes('undefined'));if(f<2)await a.act('touch-next');}
  await a.act('touch-record',{outcome:'unsure'});}
  }
+});
+
+test('My drink saves each step, restores with device access, and never records child taps',async()=>{
+ const store={real:true};const a=await app(store);await a.act('drink-open');assert.equal(a.read('state.autoAccess'),true);
+ for(let i=0;i<3;i++)await a.act('drink-next');
+ await a.act('drink-choice',{choice:'more'});assert.equal(a.read('state.data.drink.observations.length'),0);
+ assert.ok(!a.root.innerHTML.includes('id="parent-navigation"'));
+ const b=await app(store);assert.equal(b.read('state.data.drink.stage'),3);await b.act('drink-open');
+ await b.act('child');await b.act('parent');assert.equal(b.read('state.page'),'drink');assert.ok(b.read('state.key'));
+ await b.act('drink-next');await b.act('drink-next');await b.act('drink-record',{outcome:'other'});
+ const c=await app(store);assert.equal(c.read('state.data.drink.stage'),6);assert.equal(c.read('state.data.drink.observations[0].outcome'),'other');
+ assert.equal(c.read('state.drinkSelected'),null);assert.equal(domain.validateData(c.read('state.data')),true);
+});
+test('existing password records need one unlock; remembering device preserves data across restart',async()=>{
+ const data=domain.initialData('en-US');data.drink={stage:2,observations:[]};const salt=webcrypto.getRandomValues(new Uint8Array(16)),pass='long test passphrase';
+ const key=await encryption.deriveKey(pass,salt);const store={real:true,envelope:{...await encryption.seal(data,key,salt),revision:1}};
+ const a=await app(store);await a.act('drink-open');assert.ok(a.root.innerHTML.includes('id="vault-form"'));assert.equal(store.envelope.revision,1);
+ await a.submit('vault-form',{passphrase:pass,rememberDevice:'on'});assert.equal(a.read('state.page'),'drink');assert.equal(a.read('state.data.drink.stage'),2);
+ const b=await app(store);assert.equal(b.read('state.autoAccess'),true);assert.equal(b.read('state.data.drink.stage'),2);
+ await b.submit('protection-form',{passphrase:pass,confirm:pass});assert.equal(store.access,null);
+ const c=await app(store);assert.equal(c.read('state.key'),null);assert.equal(c.read('state.exists'),true);
+});
+test('failed saves retain the last completed step and missing device keys do not overwrite records',async()=>{
+ const store={real:true};const a=await app(store);await a.act('drink-open');await a.act('drink-next');
+ store.envelope.revision++;await assert.rejects(a.act('drink-next'),/STALE_VAULT/);assert.equal(a.read('state.data.drink.stage'),1);
+ store.access=null;const b=await app(store);await b.act('drink-open');assert.equal(b.read('state.deviceKeyMissing'),true);assert.ok(!b.root.innerHTML.includes('id="vault-form"'));assert.equal(store.envelope.revision,3);
 });

@@ -26,7 +26,7 @@ export function renderTouch({page,w,today,locale,items,week,e,btn,t,day,index,fr
  const count=rows.filter(r=>r.status==='done').length;
  const outcomes={own:['Participated in their own way','به روش خودش همراه شد'],supported:['Participated with my support','با کمک من همراه شد'],declined:['Wanted to stop','خواست تمام شود'],unsure:['Not sure / not observed','مطمئن نیستم / ندیدم']};
  const bar=`<div class="touch-actions">${A(T('Child’s pictures','تصویرهای کودک'),'child')}${A(T('Take a break','استراحت'),'touch-pause')}</div>`;
- const storage=`<div class="touch-storage">${e(T(saved?'Progress kept in private records on this device.':'Preview only — keep your place for tomorrow.',saved?'پیشرفت در یادداشت‌های خصوصی این دستگاه نگهداری می‌شود.':'پیش‌نمایش موقت — جای خود را برای فردا نگه دارید.'))} ${saved?'':A(T('Keep my progress','پیشرفتم را نگه دار'),'touch-save','','quiet')}</div>`;
+ const storage='';
  if(page==='touch-home'){
   let next=rows.findIndex(r=>r.status==='active');if(next<0)next=rows.findIndex(r=>r.status==='new');if(next<0)next=rows.findIndex(r=>r.status==='later');
   const closed=s.closed;

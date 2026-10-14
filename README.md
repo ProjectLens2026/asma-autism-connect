@@ -1,14 +1,13 @@
-# Asma 0.1.9 — Simple touch daily plan
+# Asma 0.1.10 — My drink and automatic saving
 
-This update applies the approved navy, light-blue and white interface to the working offline app.
+The approved My drink concept is now the main activity: a three-scene photo walkthrough, large communication choices, a real-cup routine, and a one-tap caregiver observation. Earlier draft activities remain under a collapsed section.
 
-- Today shows five large activity cards with Start, Continue, For later or Finished states.
-- Each activity has preparation, a parent/child turn, and one-tap observation/closure.
-- Day 1 contains five distinct original draft activities. Days 2–7 retain the same daily rhythm, with the third activity using the existing day's communication focus. This is not 35 unrelated new lessons or a reviewed 180-day program.
-- Finish today closes the day without claiming unfinished activities were completed. The next day requires a review; missed calendar days do not skip learning days.
-- Existing encrypted records and earlier session history remain intact. Private records auto-lock when the app is hidden, after inactivity, or on return from child mode. Unlock to resume the same activity.
-- Choose Keep my progress before closing the browser. Unsaved preview progress is temporary. Existing vaults must be unlocked; guest preview never overwrites an existing vault.
-- Existing generated photos are illustrations, not step-by-step demonstration videos. Clinical and native Afghan Dari review remain pending.
+- Start or continue from Today. Steps and observations save automatically on this browser; return later to continue. Child picture taps are not recorded.
+- New records use automatic device access. Anyone using the same browser profile can open them. More offers optional password protection and a portable password-encrypted backup.
+- Existing password-protected records require one unlock. Leave “Remember this device” checked to continue automatically afterward. Existing history is preserved.
+- The full picture board remains available. No water, break or stopping is conditional on a tap or spoken word.
+- English device voice is optional. Native Dari audio, native language review and clinical review remain pending. The water photo is an AI-generated illustration, not a demonstration video.
+- Automatic access is local to this browser, not cloud sync. Clearing browser data removes records. Export a portable backup before moving devices.
 
 ## Windows update
 
@@ -24,6 +23,8 @@ The Asma_Local_Preview.html file is an older standalone preview. Run the app at 
 
 ---
 
+## Earlier updates (historical notes; 0.1.10 behavior above takes precedence)
+
 ## Update 0.1.8 — seven-session learning flow
 
 The main dashboard, Today and Plan now open a seven-session sequence. Three setup questions collect caregiver context; they do not diagnose, assign a level or automatically prescribe a program. The seven original draft sessions cover shared activity, choices, help, refusal, breaks, everyday picture use and reflection. Each has three caregiver instructions, optional child-board access and a functional observation at completion.
@@ -32,7 +33,7 @@ Progression rules:
 - A session advances only after the caregiver records completion and the device’s local date is later than the last completion date. Missing days never skips sessions. Repeating is available on the same day.
 - Before a new session, review the previous activity and choose to continue, repeat or rest. Declining and “not tried / unsure” are valid responses; no mastery score is calculated.
 - Encrypted records retain setup, completed sessions, review observations and the current instruction. Old schema-1 records remain compatible; their old activity checkboxes are not treated as completion of this new curriculum.
-- A locked returning user sees an unlock prompt, not an invented Day 1 reset. Child mode locks private information when returning to the adult, so continuing saved work can require unlocking again.
+- Password-only mode still locks private records on return from child mode. Automatic access mode keeps the saved place available.
 - Public preview state lasts only in memory. Creating a new vault after consent transfers that preview’s progress; unlocking an existing vault uses its saved records. No cloud synchronization or teacher account sharing is implemented.
 - After seven sessions the app offers reflection and repetition, not an unreviewed automatic 180-day prescription. The older activity collection remains a separate draft resource.
 
@@ -140,7 +141,7 @@ Open **http://localhost:4173**. Use the picture board immediately, or create enc
 - Day selector for days 1–180, using **14 clearly labeled, repeatable draft activities**, not 180 unique or validated lessons. Caregiver completion tracking is separate from child observations.
 - Six numbered educational questions, unscored and not retained. No screening, diagnosis, licensed instruments, treatment prescription or autism severity score.
 - Functional observations with date, communication purpose, context, support and optional note; editable 3/6-calendar-month checkpoints; readable JSON/print progress export.
-- Consent-gated, AES-GCM encrypted IndexedDB vault, passphrase-derived key, automatic locking, encrypted backup/restore, deletion, atomic cross-tab revision checks and visible save failures.
+- AES-GCM encrypted IndexedDB vault with automatic device access or optional password protection; encrypted backup/restore, deletion, atomic cross-tab revision checks and visible save failures.
 - Local adult voice recording (up to 10 seconds), listen-through then explicit caregiver approval; clips remain private and locale-specific. Permission failures leave the picture board usable.
 - Optional device-local `en-US` TTS when a local voice is available. It is disabled by default. Generic Persian, remote TTS and automatic voice substitution are disabled.
 - Build-hashed offline app cache, install manifest, self-hosted lightweight assets, print board for low-tech backup, optional persistent-storage request.
